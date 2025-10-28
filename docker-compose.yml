@@ -1,0 +1,44 @@
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: anti-golpea3-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: anti_golpea3_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: murilo2012
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - anti-golpe-network
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: anti-golpe-phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: admin
+      PMA_PASSWORD: murilo2012
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    networks:
+      - anti-golpe-network
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+
+networks:
+  anti-golpe-network:
+    driver: bridge
+

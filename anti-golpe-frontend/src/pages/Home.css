@@ -1,0 +1,146 @@
+.home {
+  padding: 20px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 32px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stats {
+  margin-bottom: 40px;
+}
+
+.stats h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #1e40af;
+}
+
+.stat-card.critical {
+  border-left-color: #dc2626;
+}
+
+.stat-card.high {
+  border-left-color: #f59e0b;
+}
+
+.stat-card h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.ranking-preview {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  color: #1e293b;
+  margin: 0;
+}
+
+.link-ver-mais {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.link-ver-mais:hover {
+  color: #1e3a8a;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 2px dashed #cbd5e1;
+}
+
+.cta h2 {
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  color: #64748b;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

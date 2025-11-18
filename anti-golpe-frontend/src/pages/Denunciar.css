@@ -1,0 +1,100 @@
+.denunciar {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.denunciar-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.denunciar-form {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.categoria-checkbox {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.categoria-checkbox:hover {
+  border-color: #1e40af;
+  background: #f1f5f9;
+}
+
+.categoria-checkbox input[type="checkbox"] {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.categoria-checkbox label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.categoria-checkbox label strong {
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.categoria-checkbox label span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.alerta-privacidade {
+  background: #dbeafe;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #1e40af;
+}
+
+.alerta-privacidade p {
+  margin: 0;
+  color: #1e40af;
+  font-size: 14px;
+}
+
+.sucesso-card {
+  background: white;
+  padding: 60px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-left: 6px solid #10b981;
+}
+
+.sucesso-icon {
+  font-size: 64px;
+  color: #10b981;
+  margin-bottom: 20px;
+}
+
+.sucesso-card h2 {
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.sucesso-card p {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 12px;
+}

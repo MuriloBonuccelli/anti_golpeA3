@@ -1,0 +1,189 @@
+.consultar {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consultar-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-icon {
+  font-size: 48px;
+  color: #1e40af;
+  margin-bottom: 16px;
+}
+
+.consultar-header h1 {
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.consultar-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.consultar-form {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.resultado-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-card.risco-critico {
+  border-left: 6px solid #dc2626;
+}
+
+.resultado-card.risco-alto {
+  border-left: 6px solid #f59e0b;
+}
+
+.resultado-card.risco-medio {
+  border-left: 6px solid #eab308;
+}
+
+.resultado-card.risco-baixo {
+  border-left: 6px solid #10b981;
+}
+
+.resultado-limpo {
+  border-left: 6px solid #10b981;
+  text-align: center;
+}
+
+.resultado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.resultado-header h2 {
+  color: #1e293b;
+  margin: 0;
+}
+
+.badge-risco-grande {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.resultado-info h3 {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.info-item {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.info-label {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  display: block;
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.denuncias-lista {
+  margin-top: 32px;
+}
+
+.denuncias-lista h3 {
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.denuncia-item {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border-left: 3px solid #1e40af;
+}
+
+.denuncia-data {
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.denuncia-desc {
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.denuncia-categorias {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.categoria-tag {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.alerta-seguranca {
+  background: #fef3c7;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 24px;
+  border-left: 4px solid #f59e0b;
+}
+
+.alerta-seguranca h4 {
+  color: #92400e;
+  margin-bottom: 12px;
+}
+
+.alerta-seguranca ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.alerta-seguranca li {
+  color: #92400e;
+  margin-bottom: 8px;
+}
+
+.aviso {
+  color: #64748b;
+  font-style: italic;
+  margin-top: 12px;
+}

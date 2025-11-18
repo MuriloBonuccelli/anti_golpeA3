@@ -1,0 +1,74 @@
+.card-numero {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-numero:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-numero.risco-critico {
+  border-left: 5px solid #dc2626;
+}
+
+.card-numero.risco-alto {
+  border-left: 5px solid #f59e0b;
+}
+
+.card-numero.risco-medio {
+  border-left: 5px solid #eab308;
+}
+
+.card-numero.risco-baixo {
+  border-left: 5px solid #10b981;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1e293b;
+}
+
+.badge-risco {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f1f5f9;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-row .label {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.info-row .value {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 14px;
+}

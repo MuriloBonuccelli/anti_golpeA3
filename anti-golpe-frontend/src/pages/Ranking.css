@@ -1,0 +1,126 @@
+.ranking {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ranking-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filtros {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filtro-btn {
+  padding: 10px 20px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.filtro-btn:hover {
+  border-color: #1e40af;
+  background: #f1f5f9;
+}
+
+.filtro-btn.active {
+  background: #1e40af;
+  color: white;
+  border-color: #1e40af;
+}
+
+.filtro-btn.critico.active {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.filtro-btn.alto.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.filtro-btn.medio.active {
+  background: #eab308;
+  border-color: #eab308;
+}
+
+.filtro-btn.baixo.active {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.ranking-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ranking-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.posicao {
+  min-width: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.medal {
+  font-size: 36px;
+}
+
+.medal.gold {
+  color: #fbbf24;
+}
+
+.medal.silver {
+  color: #94a3b8;
+}
+
+.medal.bronze {
+  color: #c2410c;
+}
+
+.numero-posicao {
+  color: #64748b;
+}
+
+.card-wrapper {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .filtros {
+    gap: 8px;
+  }
+  
+  .filtro-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  .ranking-item {
+    gap: 12px;
+  }
+  
+  .posicao {
+    min-width: 40px;
+    font-size: 18px;
+  }
+  
+  .medal {
+    font-size: 28px;
+  }
+}
